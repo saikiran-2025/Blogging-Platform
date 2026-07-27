@@ -16,7 +16,7 @@ const Home = () => {
     const fetchRecentPosts = async () => {
       try {
         setMsg("");
-        const res = await axios.get("http://localhost:5000/allposts");
+        const res = await axios.get("https://blogging-platform-backend-4hwu.onrender.com/allposts");
         // Get top 3 recent posts
         const posts = res.data.posts || [];
         setRecentPosts(posts.slice(0, 3));
