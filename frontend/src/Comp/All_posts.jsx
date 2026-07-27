@@ -8,7 +8,7 @@ const All_posts = () => {
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const API_BASE = "http://localhost:5000";
+  const API_BASE = "https://blogging-platform-backend-4hwu.onrender.com";
 
   useEffect(() => {
     const fetchPosts = async () => {
