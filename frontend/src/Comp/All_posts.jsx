@@ -14,7 +14,7 @@ const All_posts = () => {
     const fetchPosts = async () => {
       try {
         setMsg("");
-        const res = await axios.get("http://localhost:5000/allposts");
+        const res = await axios.get("https://blogging-platform-backend-4hwu.onrender.com/allposts");
         setPosts(res.data.posts || []);
       } catch (error) {
         const errMsg =
