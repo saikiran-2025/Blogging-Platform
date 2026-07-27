@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===========================
+            FOOTER
+=========================== */
+
+.footer{
+    width:100%;
+    background:#111827;
+    color:#ffffff;
+    margin-top:60px;
+}
+
+/* ===========================
+        CONTAINER
+=========================== */
+
+.footer-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:60px 0;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:50px;
+}
+
+/* ===========================
+        HEADINGS
+=========================== */
+
+.footer-section h2{
+    font-size:28px;
+    margin-bottom:18px;
+    color:#fff;
+}
+
+.footer-section h3{
+    font-size:22px;
+    margin-bottom:18px;
+    color:#fff;
+}
+
+/* ===========================
+        PARAGRAPH
+=========================== */
+
+.footer-section p{
+    color:#cbd5e1;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* ===========================
+        LIST
+=========================== */
+
+.footer-section ul{
+    list-style:none;
+}
+
+.footer-section ul li{
+    margin-bottom:15px;
+    color:#cbd5e1;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.footer-section ul li:hover{
+    color:#3b82f6;
+    transform:translateX(8px);
+}
+
+/* ===========================
+      CONTACT
+=========================== */
+
+.footer-section:nth-child(3) p{
+    margin-bottom:18px;
+}
+
+/* ===========================
+      SOCIAL ICONS
+=========================== */
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#1f2937;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-radius:50%;
+
+    font-size:18px;
+
+    transition:.35s;
+}
+
+.social-icons a:hover{
+    background:#2563eb;
+    transform:translateY(-6px);
+    box-shadow:0 8px 18px rgba(37,99,235,.35);
+}
+
+/* ===========================
+        BOTTOM
+=========================== */
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;
+    padding:22px 0;
+}
+
+.footer-bottom p{
+    color:#cbd5e1;
+    font-size:15px;
+    letter-spacing:.5px;
+}
+
+/* ===========================
+      LARGE TABLETS
+=========================== */
+
+@media(max-width:1100px){
+
+.footer-container{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+}
+
+/* ===========================
+        TABLETS
+=========================== */
+
+@media(max-width:768px){
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+gap:35px;
+
+padding:45px 0;
+
+}
+
+.footer-section h2{
+
+font-size:24px;
+
+}
+
+.footer-section h3{
+
+font-size:20px;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.footer-section ul li:hover{
+
+transform:none;
+
+}
+
+}
+
+/* ===========================
+        MOBILES
+=========================== */
+
+@media(max-width:480px){
+
+.footer-container{
+
+width:92%;
+
+padding:35px 0;
+
+}
+
+.footer-section h2{
+
+font-size:22px;
+
+}
+
+.footer-section h3{
+
+font-size:18px;
+
+}
+
+.footer-section p{
+
+font-size:14px;
+
+line-height:1.7;
+
+}
+
+.footer-section ul li{
+
+font-size:14px;
+
+}
+
+.social-icons{
+
+gap:12px;
+
+}
+
+.social-icons a{
+
+width:40px;
+
+height:40px;
+
+font-size:16px;
+
+}
+
+.footer-bottom{
+
+padding:18px 10px;
+
+}
+
+.footer-bottom p{
+
+font-size:13px;
+
+}
+
+}

@@ -1,0 +1,145 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Navbar */
+.info-nav{
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 7%;
+    box-shadow:0 3px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* Logo */
+
+.title{
+    font-size:32px;
+    font-weight:700;
+    color:#111;
+    cursor:pointer;
+    letter-spacing:1px;
+}
+
+.title::first-letter{
+    color:#0d6efd;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:16px;
+    font-weight:500;
+    padding:10px 16px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+/* Hover */
+
+.nav-links a:hover{
+    background:#f3f3f3;
+    color:#0d6efd;
+}
+
+/* Create Post Button */
+
+.nav-links a:nth-child(4){
+    background:#0d6efd;
+    color:#fff;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.nav-links a:nth-child(4):hover{
+    background:#0957cf;
+    color:#fff;
+}
+
+/* Logout Button */
+
+.nav-links a:last-child{
+    background:#dc3545;
+    color:#fff;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.nav-links a:last-child:hover{
+    background:#b02a37;
+    color:#fff;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.info-nav{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:18px 20px;
+}
+
+.title{
+    margin-bottom:18px;
+    font-size:28px;
+}
+
+.nav-links{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.nav-links a{
+    flex:1 1 45%;
+    text-align:center;
+    padding:12px;
+}
+
+}
+
+@media(max-width:600px){
+
+.info-nav{
+    padding:15px;
+}
+
+.title{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.nav-links{
+    flex-direction:column;
+    width:100%;
+}
+
+.nav-links a{
+    width:100%;
+    text-align:center;
+    padding:14px;
+    font-size:15px;
+}
+
+}
