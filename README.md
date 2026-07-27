@@ -1,7 +1,5 @@
 # Blogging-Platform
 
-# Blogging Platform
-
 A full-stack **Blogging Platform** built using the **MERN Stack** that allows users to create, manage, and interact with blog posts through a secure authentication system.
 
 ## Features
