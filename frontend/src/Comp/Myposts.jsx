@@ -16,12 +16,12 @@ const Myposts = () => {
   const [recentPosts, setRecentPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState("");
-  const API_BASE = "http://localhost:5000";
+  const API_BASE = "https://blogging-platform-backend-4hwu.onrender.com";
 
   useEffect(() => {
     const fetchDashboard = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/dashboard", {
+        const res = await axios.get("https://blogging-platform-backend-4hwu.onrender.com/dashboard", {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -48,7 +48,7 @@ const Myposts = () => {
     if (!window.confirm("Are you sure you want to delete this post?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/dashboard/post/${id}`, {
+      await axios.delete(`https://blogging-platform-backend-4hwu.onrender.com/dashboard/post/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
