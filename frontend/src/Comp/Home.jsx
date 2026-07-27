@@ -10,7 +10,7 @@ const Home = () => {
   const [msg, setMsg] = useState("");
   const navigate = useNavigate();
   const { token } = useContext(Ct); // if you want to send auth later (currently /allposts is public)
-  const API_BASE = "http://localhost:5000";
+  const API_BASE = "https://blogging-platform-backend-4hwu.onrender.com";
 
   useEffect(() => {
     const fetchRecentPosts = async () => {
