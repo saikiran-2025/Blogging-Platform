@@ -9,7 +9,7 @@ const Edit_post = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { token } = useContext(Ct);
-  const API_BASE = "http://localhost:5000";
+  const API_BASE = "https://blogging-platform-backend-4hwu.onrender.com";
 
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
@@ -26,7 +26,7 @@ const Edit_post = () => {
     const fetchPost = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/dashboard/post/${id}`,
+          `https://blogging-platform-backend-4hwu.onrender.com/dashboard/post/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -81,7 +81,7 @@ const Edit_post = () => {
       }
 
       await axios.put(
-        `http://localhost:5000/dashboard/post/${id}`,
+        `https://blogging-platform-backend-4hwu.onrender.com/dashboard/post/${id}`,
         formData,
         {
           headers: {
