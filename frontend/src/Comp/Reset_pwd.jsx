@@ -26,7 +26,7 @@ const Reset_pwd = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/reset", data);
+      const res = await axios.post("https://blogging-platform-backend-4hwu.onrender.com/reset", data);
 
       // Backend returns { success: true, message: "Password reset successfully." }
       setMsg(res.data.message || "Password reset successfully.");
