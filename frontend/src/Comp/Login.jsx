@@ -19,7 +19,7 @@ const Login = () => {
   const login = async () => {
     try {
       setMsg(""); // clear old message
-      const res = await axios.post("http://localhost:5000/login", data);
+      const res = await axios.post("https://blogging-platform-backend-4hwu.onrender.com/login", data);
 
       if (res.data.token) {
         // Save token and user info in context
