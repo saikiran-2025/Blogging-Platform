@@ -25,7 +25,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/register", data);
+      const res = await axios.post("https://blogging-platform-backend-4hwu.onrender.com/register", data);
 
       // Backend returns { msg: "Registration successful", user: { ... } }
       setMsg(res.data.msg || "Registration successful");
