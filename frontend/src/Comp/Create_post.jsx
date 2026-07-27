@@ -11,7 +11,7 @@ const Create_post = () => {
   const [content, setContent] = useState("");
   const [tags, setTags] = useState(""); // comma-separated string
   const [imageFile, setImageFile] = useState(null);
-  const API_BASE = "http://localhost:5000";
+  const API_BASE = "https://blogging-platform-backend-4hwu.onrender.com";
 
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
@@ -55,7 +55,7 @@ const Create_post = () => {
       }
 
       const res = await axios.post(
-        "http://localhost:5000/createpost",
+        "https://blogging-platform-backend-4hwu.onrender.com/createpost",
         formData,
         {
           headers: {
