@@ -10,7 +10,7 @@ const ViewPost = () => {
   const [postData, setPostData] = useState(null);
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(true);
-  const API_BASE = "http://localhost:5000";
+  const API_BASE = "https://blogging-platform-backend-4hwu.onrender.com";
 
   const [likeCount, setLikeCount] = useState(0);
   const [comments, setComments] = useState([]);
@@ -23,7 +23,7 @@ const ViewPost = () => {
         setLoading(true);
 
         const res = await axios.get(
-          `http://localhost:5000/viewpost/${id}`
+          `https://blogging-platform-backend-4hwu.onrender.com/viewpost/${id}`
         );
         const p = res.data.post;
 
@@ -51,7 +51,7 @@ const ViewPost = () => {
     try {
       setMsg("");
       const res = await axios.post(
-        `http://localhost:5000/viewpost/${id}/like`,
+        `https://blogging-platform-backend-4hwu.onrender.com/viewpost/${id}/like`,
         {},
         {
           headers: {
@@ -80,7 +80,7 @@ const ViewPost = () => {
     try {
       setMsg("");
       const res = await axios.post(
-        `http://localhost:5000/viewpost/${id}/comment`,
+        `https://blogging-platform-backend-4hwu.onrender.com/viewpost/${id}/comment`,
         { text: commentText },
         {
           headers: {
