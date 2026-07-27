@@ -18,7 +18,7 @@ const Logout = () => {
 
             if (user?.username) {
                 await axios.post(
-                    `http://localhost:5000/logout/${user.email}`
+                    `https://blogging-platform-backend-4hwu.onrender.com/logout/${user.email}`
                 );
             }
 
